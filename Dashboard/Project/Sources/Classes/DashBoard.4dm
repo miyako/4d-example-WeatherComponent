@@ -8,7 +8,7 @@ property astronomy : Object
 Class constructor
 	
 	This.user:="Hi Keisuke Miyako!"
-	This.location:="Tokyo"
+	This.location:="東京"
 	This.date:=String(Current date; "yyyy-MM-dd")
 	
 Function onLoad()
