@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="Dashboard" uuid="330C946CFCB54A77B44521A0EEB76046" collation_locale="fr">
+<base name="6. Dashboard" uuid="330C946CFCB54A77B44521A0EEB76046" collation_locale="fr">
 	<schema name="DEFAULT_SCHEMA"/>
 	<base_extra>
 		<journal_file journal_file_enabled="false"/>
