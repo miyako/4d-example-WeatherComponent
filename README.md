@@ -1,4 +1,11 @@
-# 4d-example-WeatherComponent
-Project to showcase WeatherComponent
+# 6. モジュール開発
 
-**Original repository**: [`fabrice-mainguene/Webinar21LTS_MyHostProject`](https://github.com/fabrice-mainguene/Webinar21LTS_MyHostProject/)
+## `Weather API`トークンの管理
+
+`/PACKAGE/Secrets`に下記の要領で秘密ファイルを用意します。
+
+- `Secrets/Weather.token`
+
+```txt
+******************************
+```
