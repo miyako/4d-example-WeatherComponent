@@ -1,1 +1,4 @@
 Dashboard/Secrets/*
+Dashboard/Project/DerivedData/*
+Dashboard/Data/*
+Dashboard/userPreferences.*
