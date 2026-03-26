@@ -29,7 +29,7 @@ Function onIcon($request : 4D.HTTPRequest; $event : Object)
 		BLOB TO PICTURE($request.response.body; $icon)
 		Form.icon:=$icon
 	Else 
-		Form.weather:={success: False; response: {}; errors: $request.response.body.error; status: $request.response.status; statusText: $request.response.statusText}
+		Form.weather:={success: False; response: {}; errors: $request.response.body; status: $request.response.status; statusText: $request.response.statusText}
 	End if 
 	
 Function onAstronomy($request : 4D.HTTPRequest; $event : Object)
@@ -41,7 +41,7 @@ Function onAstronomy($request : 4D.HTTPRequest; $event : Object)
 	If (($request.response#Null) && ($request.response.status=200))
 		Form.astronomy:={success: True; response: $request.response.body}
 	Else 
-		Form.astronomy:={success: False; response: {}; errors: $request.response.body.error; status: $request.response.status; statusText: $request.response.statusText}
+		Form.astronomy:={success: False; response: {}; errors: $request.response.body; status: $request.response.status; statusText: $request.response.statusText}
 	End if 
 	
 Function onCurrent($request : 4D.HTTPRequest; $event : Object)
@@ -57,7 +57,7 @@ Function onCurrent($request : 4D.HTTPRequest; $event : Object)
 		$iconUrl:="https:"+Form.weather.response.current.condition.icon
 		4D.HTTPRequest.new($iconUrl; {onResponse: Form.onIcon})
 	Else 
-		Form.weather:={success: False; response: {}; errors: $request.response.body.error; status: $request.response.status; statusText: $request.response.statusText}
+		Form.weather:={success: False; response: {}; errors: $request.response.body; status: $request.response.status; statusText: $request.response.statusText}
 	End if 
 	
 Function _secretsFolder() : 4D.Folder
